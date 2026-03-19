@@ -13,8 +13,8 @@ def load_resources():
     ohe_grade = joblib.load('models/ohe_loan_grade.pkl')
     ohe_ownership = joblib.load('models/ohe_home_ownership.pkl')
     
-    # Load default on file encoder (jika ada di tugasmu)
-    # Jika tidak ada, kita buat manual di bawah
+    # Load default on file encoder 
+    # Jika tidak ada, file dibuat manual
     try:
         ohe_default = joblib.load('models/ohe_default_on_file.pkl')
     except:
@@ -27,7 +27,7 @@ def load_resources():
 
 model, ohe_intent, ohe_grade, ohe_ownership, ohe_default, threshold = load_resources()
 
-# --- 2. KONFIGURASI HALAMAN (SAMA DENGAN UI ASLI) ---
+# --- 2. KONFIGURASI HALAMAN (SAMA DENGAN UI) ---
 st.set_page_config(page_title="Internal Credit Risk System", layout="wide")
 
 col_logo, col_text = st.columns([1, 4])
