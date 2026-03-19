@@ -1,0 +1,6 @@
+{
+    "model_name": "Random Forest",
+    "threshold": 0.32323232323232326,
+    "metric_name": "Macro Avg Recall",
+    "metric_score": 0.8711407941675189
+}
